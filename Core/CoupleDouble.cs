@@ -47,11 +47,11 @@ namespace Core
                 _atLeastOneWrongproperty = _y % 4 == 0;
                 return this;
             }
-            
+
             public Builder WithCopy(CoupleDouble coupleDouble)
             {
                 _x = coupleDouble.X;
-                _y= coupleDouble.Y;
+                _y = coupleDouble.Y;
                 return this;
             }
             public CoupleDouble Build()
