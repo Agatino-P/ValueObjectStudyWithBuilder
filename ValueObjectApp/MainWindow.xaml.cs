@@ -43,10 +43,13 @@ namespace ValueObjectApp
             CoupleDouble coupleDouble3 = new CoupleDouble.Builder().WithY(-1).Build();
 
             CoupleDouble coupleDouble4 = new CoupleDouble.Builder().WithX(1).WithY(2).Build();
+            
+            CoupleDouble coupleDouble5 = coupleDouble4;
 
             bool areEqual1and2 = (coupleDouble1 == coupleDouble2);
             bool areEqual1and3 = (coupleDouble1 == coupleDouble2);
             bool areEqual1and4 = (coupleDouble1 == coupleDouble4);
+            bool areEqual4and5 = (coupleDouble1 == coupleDouble4);
 
         }
     }
