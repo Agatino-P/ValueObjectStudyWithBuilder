@@ -46,6 +46,8 @@ namespace ValueObjectApp
             
             CoupleDouble coupleDouble5 = coupleDouble4;
 
+            CoupleDouble coupleDouble6 = 1.5;
+
             bool areEqual1and2 = (coupleDouble1 == coupleDouble2);
             bool areEqual1and3 = (coupleDouble1 == coupleDouble2);
             bool areEqual1and4 = (coupleDouble1 == coupleDouble4);

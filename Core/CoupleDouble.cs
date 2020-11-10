@@ -1,5 +1,7 @@
 ﻿using Shared;
+using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Core
 {
@@ -79,6 +81,12 @@ namespace Core
         {
             yield return X;
             yield return Y;
+        }
+
+        public static implicit operator CoupleDouble(double v)
+        {
+            return new CoupleDouble(v, v);
+            
         }
 
         //public  override int GetHashCode() => base.GetHashCode();
