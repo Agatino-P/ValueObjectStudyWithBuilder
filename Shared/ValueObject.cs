@@ -41,6 +41,9 @@ namespace Shared
                 .Select(x => x != null ? x.GetHashCode() : 0)
                 .Aggregate((x, y) => x ^ y);
         }
+
+        public static bool operator ==(ValueObject valueObjectOne, ValueObject valueObjectTwo) => EqualOperator(valueObjectOne, valueObjectTwo);
+        public static bool operator !=(ValueObject valueObjectOne, ValueObject valueObjectTwo) => NotEqualOperator(valueObjectOne, valueObjectTwo);
         // Other utility methods
     }
 }

@@ -8,15 +8,6 @@ namespace Core
         public double X { get; private set; }
         public double Y { get; private set; }
 
-        public static bool operator ==(CoupleDouble coupleDoubleOne, CoupleDouble coupleDoubleTwo)
-        {
-            return CoupleDouble.EqualOperator(coupleDoubleOne, coupleDoubleTwo);
-        }
-
-        public static bool operator !=(CoupleDouble coupleDoubleOne, CoupleDouble coupleDoubleTwo)
-        {
-            return CoupleDouble.NotEqualOperator(coupleDoubleOne, coupleDoubleTwo);
-        }
 
         private CoupleDouble(double x, double y)
         {
@@ -89,5 +80,11 @@ namespace Core
             yield return X;
             yield return Y;
         }
+
+        //public  override int GetHashCode() => base.GetHashCode();
+        //public override bool Equals(object obj) => base.Equals(obj);
+        //public static bool operator ==(CoupleDouble coupleDoubleOne, CoupleDouble coupleDoubleTwo) => CoupleDouble.EqualOperator(coupleDoubleOne, coupleDoubleTwo);
+        //public static bool operator !=(CoupleDouble coupleDoubleOne, CoupleDouble coupleDoubleTwo) => CoupleDouble.NotEqualOperator(coupleDoubleOne, coupleDoubleTwo);
+
     }
 }

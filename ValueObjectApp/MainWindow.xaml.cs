@@ -50,7 +50,7 @@ namespace ValueObjectApp
             bool areEqual1and3 = (coupleDouble1 == coupleDouble2);
             bool areEqual1and4 = (coupleDouble1 == coupleDouble4);
             bool areEqual4and5 = (coupleDouble1 == coupleDouble4);
-
+            int hashcode = coupleDouble1.GetHashCode();
         }
     }
 }
