@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoupleDouble.cs" />
+    <Compile Include="KeyDict.cs" />
     <Compile Include="PrgParam.Builder.cs" />
     <Compile Include="PrgParam.cs" />
     <Compile Include="PrgParam.Validator.cs" />

@@ -54,8 +54,6 @@ namespace Core.Test
             //Assert
             paramsList.Count.Should().Be(NUMPARAMS);
             paramsList.SequenceEqual(prgParams.Params).Should().BeTrue();
-
-
         }
 
     }
