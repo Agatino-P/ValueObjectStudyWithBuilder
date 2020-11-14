@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Shared.Test
 {
     [TestFixture]
-    public  class testClass
+    public class KeyDictTest
     {
         private class KeyDictItem : ValueObject
         {
@@ -39,7 +39,7 @@ namespace Shared.Test
             KeyDict<KeyDictItem, string> keyDict = new KeyDict<KeyDictItem, string>(_getKeyFunc);
             KeyDictItem kdiAdded = new KeyDictItem() { Key = "uno", Val = "UNO" };
             keyDict.Add(kdiAdded);
-            
+
             KeyDictItem kdiRetrieved = keyDict["uno"];
 
             kdiRetrieved.Should().Be(kdiAdded);

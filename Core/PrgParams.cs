@@ -7,7 +7,7 @@ namespace Core
 {
     public class PrgParams
     {
-        private Dictionary<string, PrgParam> _prgParams = new Dictionary<string , PrgParam>();
+        private Dictionary<string, PrgParam> _prgParams = new KeyDict<string,PrgParam>(pp=>pp.Name);
 
         public IEnumerable<PrgParam> Params => _prgParams.Values;
 
